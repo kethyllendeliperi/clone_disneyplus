@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.7"
   },
@@ -258,8 +260,8 @@
     "static-extend": "^0.1.2",
     "stream-exhaust": "^1.0.2",
     "stream-shift": "^1.0.2",
-    "string-width": "^1.0.2",
     "string_decoder": "^1.1.1",
+    "string-width": "^1.0.2",
     "strip-ansi": "^6.0.1",
     "strip-bom": "^2.0.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
