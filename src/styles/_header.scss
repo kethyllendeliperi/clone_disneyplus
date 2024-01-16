@@ -7,19 +7,7 @@
     background-color: variaveis.$corDeFundo;
     transition: background-color 0.5s ease;
     z-index: 1;
-
-    &--is-hidden {
-        background-color: transparent;
-        transition: background-color 0.5s ease;
-
-        .header {
-            &__logo, &__links__item:first-child {
-                opacity: 0;
-                visibility: hidden;
-                transition: opacity 0.5s ease;
-            }
-        }
-    }
+    background-color: transparent;
 
     &__container {
         padding: 8px 36px;
@@ -31,18 +19,7 @@
         } 
     }
 
-    &__logo {
-        max-width: 80px;
-        width: 100%;
-        margin: 5px;
-        transition: opacity 0.5s ease;
-
-        @media (max-width: 768px) {
-            max-width: 64px;
-        } 
-    }
-
-    &__links {
+    &__link {
         display: flex;
         list-style: none;
         
@@ -60,8 +37,8 @@
         padding: 8px 11px;
         height: 40px;
         letter-spacing: 0;
-    } 
+        } 
 
-}
+    }
 
 }
